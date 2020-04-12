@@ -28,6 +28,7 @@ class Artist
       new_artist.save
       new_artist
     end
+    new_artist
   end
 
 
