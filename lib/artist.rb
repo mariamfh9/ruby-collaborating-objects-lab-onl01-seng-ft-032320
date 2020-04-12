@@ -20,19 +20,9 @@ class Artist
   
   
   def self.find_or_create_by_name(artist_name)
-    self.find(artist_name) ? self.find(artist_name) : self.create(artist_name)
-    #self.all.find {|artist| artist.artist_name == artist_name }
-    #self.new(artist_name).tap {|artist| artist.save}
+   self.all.detect { |artist| artist.artist_name == artist_name }
   end
 
-  def self.find(name)
-    self.all.find {|artist| artist.name == name }
-  end
-
-
-  def self.create(name)
-    self.new(name).tap {|artist| artist.save}
-  end
 
 
 
