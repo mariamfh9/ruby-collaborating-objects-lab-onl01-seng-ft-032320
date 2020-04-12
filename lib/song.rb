@@ -13,12 +13,6 @@ class Song
     new_song.artist_name = artist
     new_song.save
   end
-
-  def self.find_by_artist(artist)
-    Song.all.select do | song |
-      song.artist == artist
-    end
-  end
   
   def self.all
     @@all
