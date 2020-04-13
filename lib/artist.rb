@@ -42,7 +42,7 @@ class Artist
   #end 
    # artist
     
-  end
+
 
 
 
